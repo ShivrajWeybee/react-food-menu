@@ -9,11 +9,8 @@ export const Food = ({ foodName }) => {
   const [post, setPost] = useState({})
   const [loading, setLoading] = useState(true)
   const [catArr, setCatArr] = useState([])
-  let cat = [];
 
   useEffect(() => {
-
-    // Initial Click
     if (catArr.length === 0 || catArr.findIndex(el => el.foodName === foodName) === -1) {
       setLoading(true)
       axios
@@ -24,22 +21,19 @@ export const Food = ({ foodName }) => {
           setLoading(false)
         })
     }
-
-    // Onwards Click
     else {
       const index = catArr.findIndex(el => el.foodName === foodName);
       setPost(catArr[index].data)
     }
-
   }, [foodName])
 
   return (
     <div className='display-food-container'>
       {
         loading ? <PageLoader /> :
-        post.length > 0 ?
-          post.map(i => <FoodDetails foodItem={i} key={i.id} />)
-          : 'No Food items...'
+          post.length > 0 ?
+            post.map(i => <FoodDetails foodItem={i} key={i.id} />)
+            : 'No Food items...'
       }
     </div>
   )

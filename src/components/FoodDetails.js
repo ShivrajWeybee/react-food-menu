@@ -1,7 +1,6 @@
 import React from 'react'
 
 export const FoodDetails = ({ foodItem }) => {
-
     return (
         <div className='food-item-container flex'>
             <img
