@@ -1,6 +1,0 @@
-
-- active link : ✅
-
-- page loader : ✅
-
-- set default img : ✅
