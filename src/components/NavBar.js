@@ -1,10 +1,9 @@
-import axios from 'axios';
-import React, { useRef } from 'react'
-import { useState, useEffect } from 'react';
+import React, { Suspense } from 'react'
+import { useState } from 'react';
 import { Food } from './Food';
 
 export const NavBar = () => {
-    
+
     const [targetValue, setTargetValue] = useState('burgers')
 
     return (
@@ -38,7 +37,6 @@ export const NavBar = () => {
                 </ul>
             </nav>
             <hr className='header-hr' />
-            {/* {loading ? <PageLoader /> : initial ? <Food foodName='burgers' /> : ''} */}
             {targetValue ? <Food foodName={targetValue} /> : ''}
         </div>
     )

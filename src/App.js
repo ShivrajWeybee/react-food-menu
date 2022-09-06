@@ -1,4 +1,5 @@
 import './App.css';
+import './Apps.css'
 import { Header } from './components/Header';
 import { NavBar } from './components/NavBar';
 

@@ -75,6 +75,7 @@ body {
   gap: 50px;
   justify-items: stretch;
   margin-bottom: 20px;
+  min-height: 90vh;
 }
 
 
@@ -83,6 +84,7 @@ body {
   border-radius: 15px 15px 0 0;
   flex-direction: column;
   overflow: hidden;
+  transition: 0.24s ease-in-out;
 }
 
 .food-item-container img {
@@ -133,13 +135,45 @@ body {
   font-weight: 700;
 }
 
+.default-img {
+  line-height: 200px;
+  background-color: black;
+  color: whitesmoke;
+  width: 100%;
+}
+
 .active-btn {
   color: rgb(230, 61, 0);
 }
 
+#sparkles > path {
+  animation: sparklyBits 1000ms infinite;
+  position: absolute;
+}
+
+#message {
+  margin-top: 20px;
+  text-align: center;
+}
+
+@for $i from 1 through 29 {
+  #sparkles > path:nth-child(#{$i}) {
+    animation-delay: (35ms * $i);
+  }
+}
+
+@keyframes sparklyBits {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .loader {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 16px;

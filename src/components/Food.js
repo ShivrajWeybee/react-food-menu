@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useState, useEffect, Suspense } from 'react'
 import axios from 'axios'
-import { useState, useEffect } from 'react'
 import { FoodDetails } from './FoodDetails';
 import { PageLoader } from './PageLoader';
+
+// const FoodDetails = React.lazy(() => import('./FoodDetails'))
 
 export const Food = ({ foodName }) => {
 
@@ -35,6 +36,7 @@ export const Food = ({ foodName }) => {
             post.map(i => <FoodDetails foodItem={i} key={i.id} />)
             : 'No Food items...'
       }
+      {/* {post.length > 0 && post.map(i => <Suspense fallback={<PageLoader />}><FoodDetails foodItem={i} key={i.id} /></Suspense>)} */}
     </div>
   )
 }
