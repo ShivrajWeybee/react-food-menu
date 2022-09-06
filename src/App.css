@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=DM+Serif+Display&family=Roboto&family=Uncial+Antiqua&display=swap');
 
 * {
   margin: 0;
@@ -20,14 +20,12 @@ body {
   align-items: center;
 }
 
-
-
 .header-title {
   color: rgb(114, 34, 5);
   font-size: 50px;
   text-align: center;
   letter-spacing: 2px;
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'DM Serif Display', serif;
 }
 
 .header-hr {
@@ -35,14 +33,10 @@ body {
   margin-bottom: 20px;
 }
 
-
-
 .main-container {
   justify-content: flex-start;
   align-items: flex-start;
 }
-
-
 
 .navbar {
   overflow: scroll;
@@ -75,15 +69,17 @@ body {
 }
 
 
-
 .display-food-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 50px;
   justify-items: stretch;
+  margin-bottom: 20px;
 }
 
+
 .food-item-container {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 15px 15px 0 0;
   flex-direction: column;
   overflow: hidden;
@@ -137,11 +133,9 @@ body {
   font-weight: 700;
 }
 
-
 .active-btn {
   color: rgb(230, 61, 0);
 }
-
 
 .loader {
   position: absolute;
@@ -162,16 +156,18 @@ body {
     background-color: #00000071;
     box-shadow: 32px 0 #00000071, -32px 0 rgb(230, 61, 0);
   }
+
   50% {
     background-color: rgb(230, 61, 0);
     box-shadow: 32px 0 #00000071, -32px 0 #00000071;
   }
+
   100% {
     background-color: #00000071;
     box-shadow: 32px 0 rgb(230, 61, 0), -32px 0 #00000071;
   }
 }
-      
+
 
 @media screen and (max-width: 700px) {
   .navbar ul {
