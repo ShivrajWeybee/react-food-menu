@@ -2,6 +2,7 @@ import React from 'react'
 
 export const PageLoader = () => {
   return (
+<<<<<<< HEAD
     <div className='burger-loader'>
       <svg width="150px" height="150px" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
         <g id="sparkles">
@@ -44,5 +45,8 @@ export const PageLoader = () => {
       </svg>
       <div id="message">Loading Food...</div>
     </div>
+=======
+    <span className="loader"></span>
+>>>>>>> adb13aff46cad3cdf242c1e41eb51b9c5a7a5046
   )
 }

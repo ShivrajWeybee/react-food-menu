@@ -2,7 +2,6 @@ import React, { Suspense } from 'react'
 import { PageLoader } from './PageLoader'
 
 export const FoodDetails = ({ foodItem }) => {
-
     return (
         <div className='food-item-container flex'>
 

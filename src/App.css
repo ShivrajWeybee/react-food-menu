@@ -75,7 +75,10 @@ body {
   gap: 50px;
   justify-items: stretch;
   margin-bottom: 20px;
+<<<<<<< HEAD
   min-height: 90vh;
+=======
+>>>>>>> adb13aff46cad3cdf242c1e41eb51b9c5a7a5046
 }
 
 
@@ -135,6 +138,7 @@ body {
   font-weight: 700;
 }
 
+<<<<<<< HEAD
 .default-img {
   line-height: 200px;
   background-color: black;
@@ -142,10 +146,13 @@ body {
   width: 100%;
 }
 
+=======
+>>>>>>> adb13aff46cad3cdf242c1e41eb51b9c5a7a5046
 .active-btn {
   color: rgb(230, 61, 0);
 }
 
+<<<<<<< HEAD
 #sparkles > path {
   animation: sparklyBits 1000ms infinite;
   position: absolute;
@@ -171,6 +178,8 @@ body {
   }
 }
 
+=======
+>>>>>>> adb13aff46cad3cdf242c1e41eb51b9c5a7a5046
 .loader {
   position: absolute;
   top: 40%;
